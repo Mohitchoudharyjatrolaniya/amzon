@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <script>
+      function show() {
+        var a = "welcome to amazon";
+        alert(a)
+      }
+      // function showtime() {
+      //   var a = "welcome to amazon";
+      //   alert(a)
+      // }
+     
+    </script>
+    <style>
+      .main-amazon{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: -60px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-height: 600px;
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit- {
+
+  width: 100%;
+  padding: 10px;
+  background-color: #f0c14b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #b5bdc6;
+}
+
+#new-to{
+  text-align: center;
+}
+
+
+.ancer{
+  text-decoration: none;
+  color: #007bff;
+}
+
+.create-ac{
+  background-color: white;
+  color: black;
+  border: 2px rgb(235, 175, 175);
+  width: 100%;
+  padding: 10px;
+  /* background-color: #007bff; */
+  /* color: #fff; */
+  /* border: none; */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+}
+
+footer{
+  margin-top: -20px;
+  max-height: 600px;
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+p{
+  font-size: small;
+}
+
+
+    </style>
+    <!-- <link rel="stylesheet" href="mohit.css"> -->
+</head>
+<body>
+  <div class="main-amazon">
+    <img src="Amazon-Logo-white.png" width="200px" alt="">
+  </div>
+    <div class="container">
+        <h2>Sign in</h2>
+        <form action="#">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email or mobile phone number</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <!-- <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div> -->
+            <!-- <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div> -->
+            <button  id="signInButton" class="submit-" type="button">Sign Up</button>
+            <div>
+              <p>By continuing, you agree to Amazon's Conditions of Use and Privacy Notice.</p>
+            </div>
+            <br>
+            <div>
+              <a class="ancer" href="">Need help?</a>
+            </div>
+            <hr>
+            <div>
+              <p>Buying for work?</p>
+              <a class="ancer" href="">Shop on Amazon Business</a>
+            </div>
+        </form>
+
+    
+    </div>
+    <footer>
+    <div>
+      <p id="new-to">New to amazon?</p>
+    </div>
+ 
+    <hr>
+    <div >
+      <button onclick="show()" class="create-ac" type="submit">Create your Amazon account</button>
+    </div>
+    </footer>
+    <script>
+       document.getElementById("signInButton").addEventListener("click", function() {
+            // Redirect to the next page
+            window.location.href = "amazon.html";
+        });
+    </script>
+
+   
+</body>
+</html>
+
